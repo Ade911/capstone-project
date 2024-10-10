@@ -1,0 +1,16 @@
+# Terraform state files
+*.tfstate
+*.tfstate.backup
+*.tfstate.*
+
+# Terraform plan files
+*.tfplan
+
+# Terraform variable files (sensitive information)
+*.tfvars
+
+# Terraform provider plugins directory
+.terraform/
+
+# Optional lock file (for provider version consistency)
+.terraform.lock.hcl
