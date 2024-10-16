@@ -181,13 +181,37 @@ How to generate password
 
 ![token generated](<images/CICD with Jenkins/token generated.png>)
 
+Copy the token from github then paste in the password column on Jenkins, give it an ID then Add
+
+![copy and paste token generated](<images/CICD with Jenkins/paste token, add any name, click add.png>)
+
+In the credentials, select your credential at the far end of the list
+
+![select the newly added credential](<images/CICD with Jenkins/pick the newly added credential.png>)
+
+Ensure you are on Either Master or Main branch, confirm that from your github
+
+![be sure you typed in the correct branch nanme](<images/CICD with Jenkins/master must be chaged to main (check github to be sure it's main if not leave it as master.png>)
+
+Generate pipeline script, then copy
+
+![generate pipeline script](<images/CICD with Jenkins/generate pipeline script.png>)
+
+Paste the generated script replacing Hello World
+
+![paste the generated script](<images/CICD with Jenkins/paste generated script and save.png>)
+
+Now run build again to comfirm no build error
+
+![build 2](<images/CICD with Jenkins/run BuIld now again to be sure there's no error.png>)
+
 TO Configure Webhook in Github and Jenkins
 
 Go to github setting, click webhook
 
 ![click webhook](<images/CICD with Jenkins/webhook, copy and paste jenkins url in it.png>)
 
-Paste Jenkins url, click add webhook
+Paste Jenkins url, ensure to add this to the jenkins url /github-webhook/ then click add webhook
 
 ![paste jenkins url](<images/CICD with Jenkins/Screenshot 2024-10-10 053048.png>)
 
@@ -197,4 +221,12 @@ Check if  you get green tick icon
 
 Now Let's configure github in JENKINS
 
-   - go to Jenkins pipeling, click configure
+- go to Jenkins pipeling, tick configure
+
+Github hook trigger for GitScm polling, then save
+
+![tick the box](<images/CICD with Jenkins/GitSCM.png>)
+
+Jenkins Github integration is then fully completed
+
+![build incrasing](<images/CICD with Jenkins/Build keeps increasing as you push to the main branch.png>)
